@@ -1,0 +1,39 @@
+<!-- 
+    로그인 html
+    username과 password를 통해 로그인을 할 수 있다. 물론 서버에 저장되 있는 것만 가능하다.
+    회원이 아닐 경우 링크를 통해 signup.html로 갈 수 있도록 설정했따.
+    script를 통해 로그인을 처리할 수 있다.
+    하지만 아직 미숙해서 그냥 회원가입 안해도 로그인이 다 되는 듯
+    좀 더 수정해봐야함
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+</head>
+<body>
+    <h1>로그인</h1>
+    <form id="login-form">
+        <label for="username">사용자명:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">비밀번호:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <button type="submit">로그인</button>
+    </form>
+
+    <p>아직 회원이 아니신가요? <a href="signup.html">회원가입</a></p>
+
+    <script>
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            // 여기서 로그인 처리를 하거나 서버로 전송할 수 있습니다.
+            console.log('로그인 정보:', username, password);
+            alert('로그인 되었습니다!');
+        });
+    </script>
+</body>
+</html>
