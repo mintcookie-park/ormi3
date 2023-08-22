@@ -44,3 +44,42 @@
   .main-title{
     font-size:24px;
   }
+
+  .layout-header{
+    height: 80px;
+    padding: 0 20px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-items: center;
+    justify-content: space-between;
+  }
+
+  .layout-header div{
+    display: flex;
+    gap: 40px;
+  }
+
+  .layout-header div *{
+    text-decoration: none;
+    font: inherit;
+    color: inherit;
+    background-color: none;
+    border: 0;
+  }
+
+  .layout-footer{
+    text-align: center;
+    background-color: #eee;
+    padding: 30px 0;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+  }
+
+  main{
+    flex-grow: 1;
+  }

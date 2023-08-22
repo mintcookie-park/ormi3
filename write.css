@@ -1,0 +1,44 @@
+.list{
+    width: 1000px;
+    margin: auto;
+}
+
+main{
+    width: 1000px;
+    margin: auto;
+}
+
+.board-table{
+    border-collapse: collapse;
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 1px solid #ddd;
+}
+
+.board-table th{
+    background-color: #eee;
+}
+
+.board-table th,
+.board-table td{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.board-table th{
+    padding: 8px;
+}
+
+.board-table td{
+    padding: 16px 8px;
+}
+
+.list table a{
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.tal{
+    text-align: left;
+}
