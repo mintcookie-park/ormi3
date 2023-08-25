@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: #000000;
+        transition: 1s;
+
+    }
+    .red{
+        background-color: red;
+        width: 10px;
+        transition: 1s;
+    }
+</style>
+<body>
+    <!-- <div></div> -->
+    <ul>
+
+    </ul>
+    <input/>
+    <button>버튼!</button>
+</body>
+<script>
+    // 버튼을 클릭하면 생기는 일
+    // 내 화면의 버튼을 선택해 가져온다.
+    // 내가 할일을 추가할 ul을 가져온다.
+    // 
+    // 인풋 요소를 가져온다.
+    // 인풋 요소안의 값을 가져온다.
+    // 인풋 요소만의 값을 li에 추가한다.
+    // 마지막으로 완성된 todo li를 ul에 추가한다.
+    const myBtn = document.querySelector("button");
+    const myUl = document.querySelector("ul");
+    const input = document.querySelector("input");
+
+    myBtn.addEventListener('click', function(){
+        const inputText = input.value;
+        if(value===""){
+            return;
+        }
+        const myLi = document.createElement('li');
+        const btnDel = document.createElement('button');
+        const btnTxt = document.createTextNode('완료');
+        btnDel.append(btnTxt);
+        btnDel.addEventListener('click', ()=>{
+            myLi.remove();
+        });
+        myLi.append('할일: ',inputText, btnDel);
+        myUl.appendChild(myLi);
+    });
+</script>
+</html>
